@@ -2,14 +2,7 @@
 
 ## About
 
-This is a modified version of the [torchac](https://github.com/fab-jul/torchac). NumpyAc takes numpy array as input and can decode in an autoregressive mode.
-
-The backend is written in C++, the API is for PyTorch tensors. It will compile in the first run with ninja.
-
-The implementation is based on [this blog post](https://marknelson.us/posts/2014/10/19/data-compression-with-arithmetic-coding.html),
-meaning that we implement _arithmetic coding_.
-While it could be further optimized, it is already much faster than doing the equivalent thing in pure-Python (because of all the
- bit-shifts etc.).
+This is a modified version of the [torchac](https://github.com/fab-jul/torchac). NumpyAc takes numpy array as input and can decode in an autoregressive mode.The backend is written in C++, the API is for PyTorch tensors. It will compile in the first run with ninja.The implementation is based on [this blog post](https://marknelson.us/posts/2014/10/19/data-compression-with-arithmetic-coding.html), meaning that we implement _arithmetic coding_. While it could be further optimized, it is already much faster than doing the equivalent thing in pure-Python (because of all the bit-shifts etc.).
 
 ### Set up conda environment
 
