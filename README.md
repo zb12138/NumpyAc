@@ -80,6 +80,6 @@ where PDF =[[ P(0), P(1) ,P(2) ]]
 NOTE: The arithmetic coder assumes that P(0) + P(1) + P(2) = 1, C_0 = 0, C_3 = 1
 ```
 The theoretical bits number can estimated by Shannon’s source coding theorem:
-$\sum_{s}-log_2P(s)$
+![](https://latex.codecogs.com/svg.image?\\sum_{s}-log_2P(s))
 ## Citation
 Reference from [torchac](https://github.com/fab-jul/torchac), thanks!
