@@ -116,8 +116,8 @@ def _convert_to_int_and_normalize(cdf_float, needs_normalization):
 
 def pdf_convert_to_cdf_and_normalize(pdf):
     assert pdf.ndim==2
-    pdf = pdf / (np.sum(pdf,1,keepdims=True))/(1+10**(-10))
     cdfF = np.cumsum( pdf, axis=1)
+    cdfF = cdfF/cdfF[:,-1:]
     cdfF = np.hstack((np.zeros((pdf.shape[0],1)),cdfF))
     return cdfF
 
